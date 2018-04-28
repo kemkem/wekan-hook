@@ -29,7 +29,7 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","wekan-hook-
 Build it
 
 ```
-docker build -t fr.hy.wekan-hook:0.1 ./
+docker build -t net.kprod.wekan-hook:0.1 ./
 ```
 
 ### Dockercompose
@@ -56,7 +56,7 @@ services:
       - /path/to/data:/data/db
 
   wekan-hook:
-    image: fr.hy.wekan-hook:0.1
+    image: net.kprod.wekan-hook:0.1
 ```
 
 Run it
